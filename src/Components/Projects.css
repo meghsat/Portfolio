@@ -1,0 +1,47 @@
+.projects {
+    background-color: #f6fcfc;
+    padding: 60px;
+    overflow: hidden; 
+    margin-top: 0px;
+    padding: 60px;
+    overflow: auto;
+    align-items: center;     /* Horizontally align children to center */
+    justify-content: center;
+    text-align: justify;
+    color: #020202;
+}
+.projects h1{
+    text-align: center;
+}
+.projects2{
+    display: flex;
+    flex-direction: row;
+}
+.projects2 h6{
+    font-weight: 550;
+}
+.contentss{
+    overflow: auto;
+    display: flex;
+    flex-direction: row;  /* To stack children vertically */
+    align-items: center;     /* Horizontally align children to center */
+    justify-content: center;
+}
+.Policy{
+     width: 75%;
+    height: 100%;
+    background-color: #cbe4f5;
+    color: #010a0a;
+    padding: 2%;
+    margin: 1%;
+}
+.Policy a{
+    text-decoration:none;
+    color: #010a0a;
+}
+.svg-icons{
+    display: inline-block; /* Make the SVG inline */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    vertical-align: middle; /* Align the SVG vertically */
+}

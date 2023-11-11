@@ -1,0 +1,160 @@
+.about {
+    margin-top: 0px;
+    padding: 60px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;  /* To stack children vertically */
+    align-items: center;     /* Horizontally align children to center */
+    justify-content: center;
+}
+
+hr {
+    width: 60px;
+    border: 2px solid black;
+  
+  }
+  
+h1 {
+    font-size: 36px;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.content {
+    display: flex;
+    margin: 10px 50px 0% 50px;
+}
+
+.text-section {
+    flex: 80%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+img {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.image {
+    float: left;
+    flex: 40%;
+    padding: 0px;
+    padding-top: 0px;
+}
+
+
+.highlight {
+    color: #ad9601;
+    font-weight: bold;
+    text-decoration: None;
+}
+
+.highlight:hover {
+    color: #cecb66;
+    transition: color 1s ease-in-out;
+}
+
+.text-status {
+    color: #822f0e;
+    font-weight: bold;
+    display: flex;
+    margin-left: 0px;
+    padding-left:0px;
+    justify-content: space-around;
+    font-style: italic;
+}
+
+
+.resume {
+    margin: 10px;
+    width: 150px;
+    font-size: 10px;
+}
+
+.button {
+    color: rgb(109, 106, 184);
+    border: 2px solid rgb(49, 45, 170);
+    display: inline-block;
+    margin: 10px;
+    width: 150px;
+    font-size: 18px;
+}
+
+.button:hover {
+    color: rgb(151, 73, 73);
+    border: 2px solid rgb(160, 45, 45);
+}   
+
+.button span:after {
+    content: '\21d3';
+    color: white;
+    
+}
+
+
+
+.social {
+    margin-top: -25px;
+    width: 20%;   
+    float: right;  
+    display: flex;
+    align-items: center; 
+}
+
+.social img {
+    width: 40px;  /* or whatever size you prefer */
+    height:40px;
+    margin: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #1db01a;
+    padding: 8px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 8px 12px;
+    text-align: left;
+    
+}
+td{
+    font-size: 15px;
+}
+td img {
+    max-width: 15px;  
+    height: auto;
+    vertical-align: middle;
+}
+.skill-highlight{
+ font-style: italic;
+ font-family: Arial, Helvetica, sans-serif;
+ color:  #802921;
+}
+@media only screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .image {
+        float: none;
+        padding-bottom: 20px;
+        text-align: center; /* Center the image and the button */
+    }
+
+    .text-section {
+        flex: 100%; /* Take full width */
+    }
+}
+.about table td, .about table th {
+    border: 1px solid #1db01a;
+}

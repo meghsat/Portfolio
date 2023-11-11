@@ -1,0 +1,35 @@
+.patents2 {
+    background-color: #000808;
+    padding: 40px;
+    overflow: hidden; 
+    color: #f0f8ff;
+}
+
+.patents {
+    margin-top: 0px;
+    padding: 10px 60px 60px 60px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;  /* To stack children vertically */
+    align-items: center;     /* Horizontally align children to center */
+    justify-content: center;
+    text-align: justify;
+    color: #f0f8ff;
+}
+.Meera{
+     width: 100%;
+    height: 100%;
+    background-color: #cbe4f5;
+    color: #010a0a;
+    padding: 2%;
+}
+.Meera a{
+    text-decoration:none;
+    color: #010a0a;
+}
+.patents h6{
+    font-weight: bolder;
+}
+.Meera .fields{
+font-style: italic;
+}

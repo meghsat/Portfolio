@@ -1,0 +1,50 @@
+#contact {
+    overflow: hidden;
+    padding: 60px 60px 20px;
+    display: flex;
+    flex-direction: column;  /* To stack children vertically */
+    align-items: center;     /* Horizontally align children to center */
+    justify-content: center;
+}
+h1 {
+    font-size: 36px;
+    margin: 0px;
+    padding-top: 0px;
+}
+.information {
+    margin: auto;
+    width: 60%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.information p{
+    margin: 40px;
+    line-height: 1.6;
+}
+
+.information p span {
+    color: #51dacf;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+    margin: 30px 10px;
+    fill: #000000;
+}
+
+svg:hover {
+    fill: #515453;
+}
+.social {
+    width: 20%;   
+    float: right;  
+    display: flex;
+    align-items: center; 
+}
+
+.social img {
+    width: 40px;  /* or whatever size you prefer */
+    height:40px;
+}
