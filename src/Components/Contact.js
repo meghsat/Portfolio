@@ -10,7 +10,7 @@ class About extends React.Component {
     render() {
         return <div id='contact' >
             <div >
-                <h1 data-aos="slide-left" data-aos-duration="1250">CONTACT</h1>
+                <h1 data-aos="slide-left" data-aos-duration="1250">MORE</h1>
             </div>
 
             <div className="information">
