@@ -30,7 +30,7 @@ h1 {
 svg {
     width: 40px;
     height: 40px;
-    margin: 30px 10px;
+    margin: 10px 10px;
     fill: #000000;
 }
 
@@ -47,4 +47,13 @@ svg:hover {
 .social img {
     width: 40px;  /* or whatever size you prefer */
     height:40px;
+}
+.text-status {
+    color: #822f0e;
+    font-weight: bold;
+    display: flex;
+    margin-left: 0px;
+    padding-left:0px;
+    justify-content: space-around;
+    font-style: italic;
 }

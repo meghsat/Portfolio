@@ -5,7 +5,7 @@ import HoverButton from './Components/HoverButton.js'
 import About from './Components/About.js'
 import Patents from './Components/Patents.js'
 import Projects from './Components/Projects.js'
-
+import Certifications from './Components/Certifications.js'
 import Contact from './Components/Contact.js'
 import Particles from 'react-particles-js';
 import particleConfig from './files/particlesjs-config.json'
@@ -59,10 +59,11 @@ function App() {
 
       <Patents></Patents>
       <Projects></Projects>
+      <Certifications></Certifications>
       <Contact></Contact>
 
       <footer>
-        <a href="https://github.com/ramanxg/Portfolio" target="_blank" rel="noopener noreferrer">Hosted on Github with </a>
+        <a href="https://github.com/meghsat/meghsat/" target="_blank" rel="noopener noreferrer">Hosted on Github</a>
       </footer>
       
     </div>

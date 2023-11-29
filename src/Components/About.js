@@ -35,7 +35,7 @@ class About extends React.Component {
                  </div>
                 <div className="text-section" data-aos ="fade-up" data-aos-duration="750">
                     <p className="text"> I'm currently pursuing Master of Data Science degree at
-                    <a className = "highlight" target = "_blank" rel="noopener noreferrer" href="https://www.ics.uci.edu/"> University of California Irvine</a>. 
+                    <a className = "highlight" target = "_blank" rel="noopener noreferrer" href="https://www.ics.uci.edu/" > University of California Irvine</a>. 
                     Prior joining UCI, I worked as an Associate Data Scientist and Software Engineer for
                     <a className = "highlight" target = "_blank" rel="noopener noreferrer" href="https://www.shell.us/"> Shell</a>. 
                     I'm an avid learner with a keen passion for Data Science and holds a strong background in Software Engineering.
@@ -116,12 +116,12 @@ class About extends React.Component {
     </table>
                     {/* <p className = "text">If I'm not coding, I might be watching/playing Cricket. Furthermore, I'm into Anime, Football, F1, and Gardening.</p> */}
                     <br/>
-                    <p className = "text-status">I'm actively looking for Summer Internship opportunities[Jun - Sep 2024] in the fields of Data Science and Software Development.
+                    {/* <p className = "text-status">I'm actively looking for Summer Internship opportunities[Jun - Sep 2024] in the fields of Data Science and Software Development.
                      If you find me to be a good fit for your organisation, kindly please reach out to me here: </p>
-            
+             */}
                    </div>    
         </div>
-        <div className="social" >
+        {/* <div className="social" >
                       
                          <a href="mailto:meghasrisatyasaid@gmail.com">
                          <svg viewBox="0 0 32 32">
@@ -134,7 +134,7 @@ class About extends React.Component {
                     </svg>
                         </a>
                      
-                    </div>
+                    </div> */}
                         </div>
                    
              

@@ -1,0 +1,62 @@
+.certifications {
+    background-color: #000808;
+    padding: 40px;
+    overflow: hidden;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.hex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.hex {
+    position: relative;
+    width: 100%;
+    padding-bottom: 115.47%; /* Adjust padding to maintain hexagon proportions */
+    background-color: rgb(212, 233, 51);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex span a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 0, 0);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.left,
+.middle,
+.right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.left {
+    transform: rotate(60deg);
+}
+
+.middle {
+    transform: rotate(0deg);
+}
+
+.right {
+    transform: rotate(-60deg);
+}
+
+.even .middle {
+    background-color: inherit;
+}
+
+.odd .middle {
+    background-color: #3498db;
+}

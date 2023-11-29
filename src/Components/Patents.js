@@ -10,7 +10,7 @@ class Patents extends React.Component {
             <div className='patents'>
                 <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="750"  className='Meera'>
                 <a target="_blank" href='https://iprsearch.ipindia.gov.in/publicsearch' ><h3>MEERA: Movie Emotion Extraction for Review Assessment</h3>
-                <h6>Publication date: 10/12/2021 | Publication no: 202141055109</h6>
+                <h6>Publication date: 10/12/2021 | Publication no: 202141055109 | Publisher: Intellectual Property India</h6>
                 <p>Abstract: In recent times, emotion Analysis has become an effective way to extract peoples' review about products.
                      We use this Emotion Extraction classification technique to generate reviews from movies. 
                      The future of the movie cast, and crew primarily depends on the reviews, but often these reviews are biased and are tampered. 
@@ -21,8 +21,8 @@ class Patents extends React.Component {
                      </a></div>
                 <br></br>
                 <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="750" className='Meera'>
-                <h3><a href=''>Alert Generation System for Non-face Mask Anonymous Users</a></h3>
-                <h6>Publication date: Under Review | Publication no: Under Review</h6>
+                <h3><a href='' target="_blank">Alert Generation System for Non-face Mask Anonymous Users</a></h3>
+                <h6>Publication date: Under Review | Publication no: Under Review | Publisher: Intellectual Property India</h6>
                 <p>COVID-19 is causing a serious threat to the whole world. 
                     To avoid succumbing to the current deadly virus, one of the efficacious methods is wearing a face mask all the time. 
                     With present technological advancements, detecting a face mask in ample lightning is a trivial job. But detection of face masks in low light situations like movie theatre scenarios is a difficult task. 
