@@ -3,7 +3,6 @@
     padding: 60px;
     overflow: hidden; 
     margin-top: 0px;
-    padding: 60px;
     overflow: auto;
     align-items: center;     /* Horizontally align children to center */
     justify-content: center;
@@ -13,13 +12,12 @@
 .projects h1{
     text-align: center;
 }
+
 .projects2{
     display: flex;
     flex-direction: row;
 }
-.projects2 h6{
-    font-weight: 550;
-}
+
 .contentss{
     overflow: auto;
     display: flex;
@@ -28,20 +26,54 @@
     justify-content: center;
 }
 .Policy{
-     width: 75%;
+     width: 65%;
     height: 100%;
     background-color: #cbe4f5;
     color: #010a0a;
     padding: 2%;
     margin: 1%;
 }
-.Policy a{
+.Policy h4{
     text-decoration:none;
     color: #010a0a;
+    font-size: 150%;
+}
+.Policy h6{
+    font-size: 90%;
+    font-weight: bold;
+
+}
+.Policy p{
+    font-size: 80%;
+
 }
 .svg-icons{
     display: inline-block; /* Make the SVG inline */
     margin: 0; /* Remove any margin */
     padding: 0; /* Remove any padding */
     vertical-align: middle; /* Align the SVG vertically */
+}
+@media only screen and (max-width: 500px) {
+    .Policy{
+        width: 100%;
+       height: 100%;
+       background-color: #cbe4f5;
+       color: #010a0a;
+       padding: 2%;
+       margin: 1%;
+   }
+   .Policy h4{
+    text-decoration:none;
+    color: #010a0a;
+    font-size: 70%;
+}
+.Policy h6{
+    font-size: 50%;
+    font-weight: bold;
+
+}
+.Policy p{
+    font-size: 50%;
+
+}
 }

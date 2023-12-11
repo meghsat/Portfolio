@@ -2,91 +2,73 @@
   scroll-behavior: smooth;
 }
 
-.App {
-  text-align: center;
-  font-family:  sans-serif
-  
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
 .App-heading {
   background-color: #080101;
-  width: 100%;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
-  padding: 0px;
+  height:100vh;
   color: white;
-}
-
-
-.particle-container {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-}
-
-p {
-  margin: 1px
-}
-
-
-
-.name {
-  font-size:50px;
-  color: #b3eb7c;
 }
 
 .Intro{
-  font-size:30px;
+  font-size:150%;
+  padding: 2%;
 }
 footer {
-  height: 50px;
-  background-color: #2c003e;
-  color: white;
+  background-color: #010b06;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  padding-top: 30px;
+  font-size: 70%;
+  padding: 1%;
 }
 
 footer a{
   color: white;
   text-decoration: none;
   transition: 0.25s ease-in-out;
-  margin: auto;
-  padding: auto;
   display: block;
+  text-align: center;
 }
 
 footer a:hover {
-  color: #682929
+  color: #744444
+}
+.greeting{
+  font-size: 200%;
+  padding: 2%;
+}
+.name{
+  font-size: 120%;
+  color: #b3eb7c;
+
 }
 ul li{
-  font-size: 15px;
+  font-size: 90%;
 }
 .life{
-  margin-top: 0px;
-  padding: 0px;
-  overflow: auto;
   display: flex;
   flex-direction: row;  /* To stack children vertically */
   align-items: center;     /* Horizontally align children to center */
   justify-content: center;
-  text-align: justify;
+
   color: #f0f8ff;
   background-color: #080101;
+  
 }
 .life li {
   border-right: 2px solid #774242;  /* Adjust color as needed */
-  display: inline-block; /* Makes the list items appear side-by-side */
- padding-left: 3%;
- padding-right: 3%;
+  display: flex;
+
+
+  flex-direction: column;  /* To stack children vertically */
+  align-items: center;   
+ padding-left: 8px;
+ padding-right: 8px;
+}
+.life li p{
+  margin-bottom: 0px;
 }
 
 .life li:last-child {
@@ -105,19 +87,22 @@ width:70px;
   height: 70px;
   width:80px;
   }
-@media only screen and (max-width: 600px) {
-  .greeting{
+@media only screen and (max-width: 690px) {
+  ul li{
     font-size: 80%;
   }
-  .name{
-    font-size: 120%;
-  }
-  .Intro{
-    font-size: 50%;
-  }
-
+  .life .his-logos{
+    height: 50px;
+    width:50px;
+    }
+    .life .his-logos2{
+      height: 50px;
+      width:60px;
+      }
+}
+@media only screen and (max-width: 400px) {
   ul li{
-    font-size: 10px;
+    font-size: 70%;
   }
   .life .his-logos{
     height: 50px;

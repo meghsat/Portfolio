@@ -1,7 +1,7 @@
 import React from 'react';
-import './Certifications.css';
+import './Hackathons.css';
 
-class Certifications extends React.Component {
+class Hackathons extends React.Component {
   renderHexRow(count) {
     const hexagons = [];
   const  certifications= [
@@ -21,7 +21,7 @@ class Certifications extends React.Component {
     ];
     for (let i = 0; i < count; i++) {
       hexagons.push(
-        <div key={i} className={`hex ${i % 2 === 0 ? 'even' : 'odd'}`}>
+        <div key={i} className={`circle ${i % 2 === 0 ? 'even' : 'odd'}`}>
           <div className="left"></div>
           <div className="middle">
             
@@ -47,4 +47,4 @@ class Certifications extends React.Component {
   }
 }
 
-export default Certifications;
+export default Hackathons;

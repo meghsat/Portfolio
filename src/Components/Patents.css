@@ -21,15 +21,45 @@
     height: 100%;
     background-color: #cbe4f5;
     color: #010a0a;
-    padding: 2%;
+    padding: 1%;
 }
 .Meera a{
     text-decoration:none;
     color: #010a0a;
 }
-.patents h6{
-    font-weight: bolder;
+.Meera p{
+    font-size: 80%;
+}
+.Meera h6{
+font-size: 90%;
+    font-weight: bold;
 }
 .Meera .fields{
 font-style: italic;
+}
+@media only screen and (max-width: 700px) {
+
+    .Meera p{
+        font-size: 70%;
+    }
+    .Meera h3{
+        font-size: 100%;
+    }
+    .Meera h6{
+        font-size: 70%;
+            font-weight: bold;
+        }
+}
+@media only screen and (max-width: 500px) {
+
+    .Meera p{
+        font-size: 60%;
+    }
+    .Meera h3{
+        font-size: 80%;
+    }
+    .Meera h6{
+    font-size: 60%;
+        font-weight: bold;
+    }
 }

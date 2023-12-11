@@ -11,7 +11,27 @@ import gmail from "../images/gmail.png"
 import star from "../images/star.png"
 
 class About extends React.Component {
-
+    renderRecRow(category, count) {
+        const hexagons = [];
+        const categories = {
+            langs: ['Python', 'Pyspark', 'C++', 'Java', 'HTML', 'CSS', 'Bootstrap', 'Github', 'JavaScript', 'ExpressJS', 'ReactJS', 'NodeJS', 'PHP', 'Kotlin', 'Power BI','Flask'],
+            dbs: ['MySQL', 'MongoDB'],
+            concepts: ['Statistics', 'Calculus', 'Machine Learning', 'Deep Learning'],
+            cloud:['Microsoft Azure','Amazon Web Services','Google Cloud Platform']
+        };
+    
+        const currentCategory = categories[category];
+    
+        for (let i = 0; i < count; i++) {
+            hexagons.push(
+                <div key={i} className={`skill-rectangle ${i % 2 === 0 ? 'even' : 'odd'}`}>
+                    <span><a>{currentCategory[i]}</a></span>
+                </div>
+            );
+        }
+    
+        return hexagons;
+    }
     render() {
         function getProficiencyImages(n) {
             return Array(n).fill(star);
@@ -22,9 +42,6 @@ class About extends React.Component {
             <div >
                 <h1 data-aos="slide-right" data-aos-duration="1250">ABOUT ME</h1>
             </div>
-            
-
-
             <div className="content">
             <div  className="image">
                     <img data-aos = "fade-down" data-aos-duration="750" src={profPic} alt=""></img>
@@ -34,14 +51,14 @@ class About extends React.Component {
 </a>                    </div>
                  </div>
                 <div className="text-section" data-aos ="fade-up" data-aos-duration="750">
-                    <p className="text"> I'm currently pursuing Master of Data Science degree at
+                    <p className="text"> I'm currently pursuing a Master of Data Science degree at
                     <a className = "highlight" target = "_blank" rel="noopener noreferrer" href="https://www.ics.uci.edu/" > University of California Irvine</a>. 
                     Prior joining UCI, I worked as an Associate Data Scientist and Software Engineer for
                     <a className = "highlight" target = "_blank" rel="noopener noreferrer" href="https://www.shell.us/"> Shell</a>. 
                     I'm an avid learner with a keen passion for Data Science and holds a strong background in Software Engineering.
                      My research interests include but not limited to <span class="skill-highlight">Computer Vision, Reinforcement learning, and Natural Language Processing</span>. I enjoy integrating Data Science into Web and Mobile Apps.</p>
-                
-                    <table>
+                     <p>On a personal front, I enjoy watching/playing Cricket. Furthermore, I'm into Anime, Football[Arsenal FC], Formula1[McLaren], and Gardening.</p>
+                    {/* <table>
         <tbody>
             <tr>
                 <td>SKILL</td>
@@ -113,31 +130,29 @@ class About extends React.Component {
             </tr>
             
         </tbody>
-    </table>
-                    {/* <p className = "text">If I'm not coding, I might be watching/playing Cricket. Furthermore, I'm into Anime, Football, F1, and Gardening.</p> */}
-                    <br/>
-                    {/* <p className = "text-status">I'm actively looking for Summer Internship opportunities[Jun - Sep 2024] in the fields of Data Science and Software Development.
-                     If you find me to be a good fit for your organisation, kindly please reach out to me here: </p>
-             */}
-                   </div>    
-        </div>
-        {/* <div className="social" >
-                      
-                         <a href="mailto:meghasrisatyasaid@gmail.com">
-                         <svg viewBox="0 0 32 32">
-                        <path d="M30.996 7.824v17.382a2.044 2.044 0 0 1-2.044 2.044h-4.773V15.663L16 21.799l-8.179-6.136v11.588H3.049a2.044 2.044 0 0 1-2.044-2.044V7.824A3.067 3.067 0 0 1 5.92 5.376l-.008-.006L16 12.937 26.088 5.37a3.067 3.067 0 0 1 4.907 2.454z" />
-                    </svg>
-                                </a>
-                        <a href="https://www.linkedin.com/in/meghadevineni/">
-                        <svg viewBox="0 0 24 24">
-                        <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
-                    </svg>
-                        </a>
-                     
-                    </div> */}
-                        </div>
-                   
-             
+    </table> */}
+    <div  className="skills-set" >
+    <h3>Skills</h3>
+        <p className='test'>Programming Languages, APIs, & Tools</p>
+        <div className="skillss">
+    {this.renderRecRow("langs",16)} {}
+    </div>
+    <p className='test'>Databases</p>
+    <div className="skillss">
+          {this.renderRecRow("dbs",2)} {}
+          </div>
+          <p className='test'>Concepts</p>
+    <div className="skillss">
+          {this.renderRecRow("concepts",4)} {}
+          </div>
+          <p className='test'>Cloud Services</p>
+    <div className="skillss">
+          {this.renderRecRow("cloud",3)} {}
+          </div>
+    </div>
+    <br></br>        
+        </div>    
+        </div></div>
     }
 }
 

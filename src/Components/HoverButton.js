@@ -7,7 +7,7 @@ class HoverButton extends React.Component {
         
         
         return <a href={this.props.page} className={`button ${this.props.class}`} download={this.props.download} rel="noopener noreferrer" target={this.props.target}>
-            <span>{this.props.text}</span>
+            <span className="button-text">{this.props.text}</span>
         </a>
            
     }

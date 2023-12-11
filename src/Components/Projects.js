@@ -13,14 +13,14 @@ class Projects extends React.Component {
     
       handleNext = () => {
         const { currentDivIndex } = this.state;
-        const totalDivs = 3; // Replace with the total number of divs you have
+        const totalDivs = 4; // Replace with the total number of divs you have
         const nextIndex = (currentDivIndex + 1) % totalDivs;
         this.setState({ currentDivIndex: nextIndex });
       };
     
       handlePrev = () => {
         const { currentDivIndex } = this.state;
-        const totalDivs = 3; // Replace with the total number of divs you have
+        const totalDivs = 4; // Replace with the total number of divs you have
         const prevIndex = (currentDivIndex - 1 + totalDivs) % totalDivs;
         this.setState({ currentDivIndex: prevIndex });
       };
@@ -68,23 +68,7 @@ class Projects extends React.Component {
                     l-1.69 2.054v.27h4.8v-.27l-1.691-2.054c-.149-.154-.241-.363-.241-.595 0-.04.003-.079.008-.117v.004-6.16l4.215 9.195h.49z" />
                 </svg> </a>
             </div>
-            <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="750" className='Policy'>
-            <h4>Dynamic web portal</h4>
-            <h6>Tech Stack: PHP, MYSQL, Python, PyTesseract</h6>
-            <p>I have designed and implemented a dynamic website tailored for Hospitals and Universities in Bangalore. 
-                This platform efficiently extracts textual data from uploaded PDFs and seamlessly displays it on the portal. 
-                Additionally, I've integrated a two-factor authentication system to enhance security by identifying and restricting suspicious logins based on IP address tracking.</p>
-                <a href='https://github.com/meghsat/Dynamic-Web-Portal' target="_blank">
-                <svg className='svg-icons' viewBox="0 0 24 24" >
-                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,
-                    20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,
-                    15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,
-                    16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,
-                    7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,
-                    7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,
-                    17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                </svg> </a>
-            </div></div>,
+            </div>,
             <div className='projects2'>
             <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="750"  className='Policy'>
             <h4>The Smart Lustro</h4>
@@ -121,13 +105,66 @@ class Projects extends React.Component {
                     7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,
                     17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
                 </svg> </a>             
+            </div></div>,
+            <div className='projects2'>
+            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="750"  className='Policy'>
+            <h4>Crime Analytics Web App</h4>
+            <h6>Tech Stack: Python, Flask, PowerBI, JavaScript, AWS Elastic Beanstalk</h6>
+            <p>Developed a Flask website for real-time crime prediction and visualization, 
+                used AWS’s SageMaker for building the models. Achieved a testing accuracy of 40.3%.</p>
+          <a href='https://github.com/meghsat/Crime-Analytics' target="_blank">
+          <svg className='svg-icons' viewBox="0 0 24 24" >
+                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,
+                    20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,
+                    15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,
+                    16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,
+                    7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,
+                    7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,
+                    17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg> </a>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="750"  className='Policy'>
+            <h4>The sentinel</h4>
+            <h6>Tech Stack: Python, Computer Vision, Raspberry Pi, Arduino</h6>
+            <p>We built a drone that senses threats and gathers climate and location data. 
+                Necessary sensors, such as IR and ultrasonic, were used to gather surrounding data. 
+                A live feed from Pycams is used to detect any threats. All the gathered data is stored in the cloud.</p>
+          <a href='https://github.com/meghsatn/' target="_blank">
+          <svg className='svg-icons' viewBox="0 0 24 24" >
+                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,
+                    20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,
+                    15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,
+                    16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,
+                    7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,
+                    7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,
+                    17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg> </a>
+                
+          </div></div>,
+          <div className='projects2'>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="750" className='Policy'>
+            <h4>Dynamic web portal</h4>
+            <h6>Tech Stack: PHP, MYSQL, Python, PyTesseract</h6>
+            <p>I have designed and implemented a dynamic website tailored for Hospitals and Universities in Bangalore. 
+                This platform efficiently extracts textual data from uploaded PDFs and seamlessly displays it on the portal. 
+                Additionally, I've integrated a two-factor authentication system to enhance security by identifying and restricting suspicious logins based on IP address tracking.</p>
+                <a href='https://github.com/meghsat/Dynamic-Web-Portal' target="_blank">
+                <svg className='svg-icons' viewBox="0 0 24 24" >
+                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,
+                    20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,
+                    15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,
+                    16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,
+                    7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,
+                    7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,
+                    17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                </svg> </a>
             </div>
             <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="750" className='Policy'>
             <h4>Black inferno</h4>
             <h6>Tech Stack: Python, C, Computer Vision, Arduino, IR, and Ultra Sonic Sensor</h6>
             <p>We have built a car prototype that accounts for thermal radiation, distance variance, and object detection to avoid the surrounding obstacles.
                 <br></br>
-                <i><b>Semifinalist@ VIT-2018 Incubation trails.</b></i>
+                <i><b>Semifinalist@ VIT Incubation Trails 2019</b></i>
             </p>
                 <a href='https://github.com/meghsat/Black-Inferno' target="_blank">
                 <svg className='svg-icons' viewBox="0 0 24 24" >
@@ -152,37 +189,21 @@ class Projects extends React.Component {
                         3.52 -2.72 6.4 -6.24 6.4zm-59.84 -5.92c0.16 1.44 1.6 2.72 3.04 2.72h56.8c1.6 0 2.88 -1.12 3.04 -2.72C100.48 74.56 85.6 55.84 82.08 52.8c-3.52 3.04 -18.4 21.76 -31.52
                          38.88zm31.04 -39.2z" fill="#231C1C"/><path d="M32 44.8a6.4 6.4 0 1 0 12.8 0 6.4 6.4 0 1 0 -12.8 0Z" fill="#F29B54"/><path d="M38.4 52.8c-4.48 0 -8 -3.52 -8 -8s3.52 -8 
                          8 -8 8 3.52 8 8 -3.52 8 -8 8zm0 -12.8c-2.72 0 -4.8 2.08 -4.8 4.8s2.08 4.8 4.8 4.8 4.8 -2.08 4.8 -4.8 -2.08 -4.8 -4.8 -4.8z" fill="#231C1C"/></svg></a>
-            </div></div>,
-            <div className='projects2'>
-            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="750"  className='Policy'>
-            <h4>Crime Analytics Web App</h4>
-            <h6>Tech Stack: Python, Flask, PowerBI, JavaScript, AWS Elastic Beanstalk</h6>
-            <p>Developed a Flask website for real-time crime prediction and visualization, 
-                used AWS’s SageMaker for building the models. Achieved a testing accuracy of 40.3%.</p>
-          <a href='https://github.com/meghsat/Crime-Analytics' target="_blank">
-          <svg className='svg-icons' viewBox="0 0 24 24" >
-                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,
-                    20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,
-                    15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,
-                    16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,
-                    7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,
-                    7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,
-                    17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                </svg> </a>
-          </div></div>
+            </div></div>
+          
         ];
         const{currentDivIndex}=this.state;
         return <div id = "projects" className = "projects">
             <h1 data-aos="slide-left" data-aos-duration="1250">PROJECTS</h1>
             <div className='contentss'>
             <a className="previous" onClick={this.handlePrev}>
-            <svg width="50px" height="50px" viewBox="0 0 3 3" version="1" 
+            <svg  viewBox="0 0 3 3" version="1" 
             xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48"><path fill="#2196F3" 
             points="30.9,43 34,39.9 18.1,24 34,8.1 30.9,5 12,24" d="M1.931 2.688L2.125 2.494L1.131 1.5L2.125 0.506L1.931 0.313L0.75 1.5Z"/>
             </svg> </a>
                {divs[currentDivIndex]}
                <a className="next" onClick={this.handleNext}>
-  <svg width="50" height="50" viewBox="0 0 3 3" version="1.1" transform="matrix(-1, 0, 0, 1, 0, 0)">
+  <svg  viewBox="0 0 3 3" version="1.1" transform="matrix(-1, 0, 0, 1, 0, 0)">
     <path fill="#2196F3" d="M1.931 2.688L2.125 2.494L1.131 1.5L2.125 0.506L1.931 0.313L0.75 1.5Z" />
   </svg>
 </a>

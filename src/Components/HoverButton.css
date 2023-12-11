@@ -3,13 +3,12 @@
     background-color: transparent; 
     color: white;
     cursor: pointer;
-    font-size: 20px;
-    padding: 20px;
+    padding: 2%;
     box-shadow: none;
     transition: background 0.3s ease-in-out;
     outline: none;
     text-align: center;
-    width: 180px;
+    width: 160px;
     border: 2px solid white;
     border-radius: 2px;
 }
@@ -33,7 +32,9 @@
     right: -20px;
     transition: 0.5s;
 }
-
+.button-text {
+    font-size: 80%; 
+}
 /* .button:hover span {
     padding-right: 25px;
 }

@@ -13,14 +13,15 @@
     margin-top: 20px;  
 }
 
-.hex {
+.circle {
     position: relative;
     width: 100%;
-    padding-bottom: 115.47%; /* Adjust padding to maintain hexagon proportions */
+    padding-bottom: 100%; /* Maintains a 1:1 aspect ratio for the circle */
     background-color: rgb(212, 233, 51);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 50%; /* Makes it a circle */
 }
-.hex span a {
+
+.circle span a {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,48 +32,26 @@
     font-weight: bold;
 }
 
-.left,
-.middle,
-.right {
-    position: absolute;
+.circle::before {
+    content: "";
+    display: block;
     width: 100%;
-    height: 100%;
-    background-color: inherit;
+    height: 0;
+    padding-bottom: 100%; /* Creates space for the content */
 }
 
-.left {
-    transform: rotate(60deg);
-}
-
-.middle {
-    transform: rotate(0deg);
-}
-
-.right {
-    transform: rotate(-60deg);
-}
-
-.even .middle {
-    background-color: inherit;
-}
-
-.odd .middle {
-    background-color: #3498db;
-}
 @media only screen and (max-width: 1468px) {
-    .hex span a {
+    .circle span a {
         font-size: 0.8em; /* Adjust font size for smaller screens */
     }
 }
 @media only screen and (max-width: 1250px) {
-
-    .hex span a {
+    .circle span a {
         font-size: 0.7em; /* Adjust font size for smaller screens */
     }
 }
 @media only screen and (max-width: 1150px) {
-  
-    .hex span a {
+    .circle span a {
         font-size: 0.6em; /* Adjust font size for smaller screens */
     }
 }
@@ -83,7 +62,7 @@
         grid-gap: 10px;
         margin-top: 20px;  
     }
-    .hex span a {
+    .circle span a {
         font-size: 0.8em; /* Adjust font size for smaller screens */
     }
 }
@@ -94,7 +73,7 @@
         grid-gap: 10px;
         margin-top: 20px;  
     }
-    .hex span a {
+    .circle span a {
         font-size: 0.8em; /* Adjust font size for smaller screens */
     }
 }
@@ -105,7 +84,7 @@
         grid-gap: 10px;
         margin-top: 20px;  
     }
-    .hex span a {
+    .circle span a {
         font-size: 0.6em; /* Adjust font size for smaller screens */
     }
 }
@@ -116,7 +95,7 @@
         grid-gap: 10px;
         margin-top: 20px;  
     }
-    .hex span a {
+    .circle span a {
         font-size: 0.5em; /* Adjust font size for smaller screens */
     }
 }
